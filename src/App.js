@@ -10,8 +10,9 @@ import Details from './components/Details'
 import Product from './components/Product'
 import ProductList from './components/ProductList'
 import Button from 'react-bootstrap/Button'
+import Modal from './components/Modal'
 
-function App()
+function App ()
 {
   return (
     <React.Fragment>
@@ -22,6 +23,7 @@ function App()
         <Route path = "/cart" component={Cart}></Route>
         <Route component = {Default}></Route>
       </Switch>
+      <Modal / >
     </React.Fragment>
   );
   
