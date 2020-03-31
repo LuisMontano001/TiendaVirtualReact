@@ -11,6 +11,7 @@ import Product from './components/Product'
 import ProductList from './components/ProductList'
 import Button from 'react-bootstrap/Button'
 import Modal from './components/Modal'
+import PhoneList from './components/PhonesList';
 
 function App ()
 {
@@ -18,7 +19,7 @@ function App ()
     <React.Fragment>
       <Navbar></Navbar>
       <Switch>
-        <Route exact path = "/" component={ProductList}></Route>
+        <Route exact path = "/" component={PhoneList}></Route>
         <Route path = "/details" component={Details}></Route>
         <Route path = "/cart" component={Cart}></Route>
         <Route component = {Default}></Route>
